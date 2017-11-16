@@ -1,1 +1,19 @@
+security:
+  basic:
+    enabled: false # turn off securing our application endpoints
+
+management:
+  security:
+    enabled: false # turn off securing the actuator endpoints
+    
+logging: # <----New sections below
+  level:
+    io:
+      pivotal: DEBUG
+
+spring: # <---NEW SECTION
+  cloud:
+    services:
+      registrationMethod: route
+
 age:  100
